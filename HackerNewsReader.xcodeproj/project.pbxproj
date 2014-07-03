@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB7C3B5019422722009123DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7C3B4F19422722009123DF /* Foundation.framework */; };
+		EB7C3B5219422722009123DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7C3B5119422722009123DF /* CoreGraphics.framework */; };
+		EB7C3B5419422722009123DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7C3B5319422722009123DF /* UIKit.framework */; };
+		EB7C3B5A19422722009123DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB7C3B5819422722009123DF /* InfoPlist.strings */; };
+		EB7C3B5C19422722009123DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B5B19422722009123DF /* main.m */; };
+		EB7C3B6019422722009123DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B5F19422722009123DF /* AppDelegate.m */; };
+		EB7C3B6319422722009123DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7C3B6119422722009123DF /* Main.storyboard */; };
+		EB7C3B6619422722009123DF /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B6519422722009123DF /* FeedsViewController.m */; };
+		EB7C3B6819422722009123DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7C3B6719422722009123DF /* Images.xcassets */; };
+		EB7C3B6F19422722009123DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7C3B6E19422722009123DF /* XCTest.framework */; };
+		EB7C3B7019422722009123DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7C3B4F19422722009123DF /* Foundation.framework */; };
+		EB7C3B7119422722009123DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7C3B5319422722009123DF /* UIKit.framework */; };
+		EB7C3B7919422722009123DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB7C3B7719422722009123DF /* InfoPlist.strings */; };
+		EB7C3B7B19422722009123DF /* HackerNewsReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B7A19422722009123DF /* HackerNewsReaderTests.m */; };
+		EB7C3B8619422734009123DF /* FeedDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B8519422734009123DF /* FeedDownloader.m */; };
+		EB7C3B8919422742009123DF /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B8819422742009123DF /* FeedItem.m */; };
+		EB7C3B8C19422F9C009123DF /* FeedItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B8B19422F9C009123DF /* FeedItemCell.m */; };
+		EB7C3B8F194236FA009123DF /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C3B8E194236FA009123DF /* FeedDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB7C3B7219422722009123DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB7C3B4419422722009123DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB7C3B4B19422722009123DF;
+			remoteInfo = HackerNewsReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB7C3B4C19422722009123DF /* HackerNewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7C3B4F19422722009123DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB7C3B5119422722009123DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB7C3B5319422722009123DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB7C3B5719422722009123DF /* HackerNewsReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackerNewsReader-Info.plist"; sourceTree = "<group>"; };
+		EB7C3B5919422722009123DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB7C3B5B19422722009123DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB7C3B5D19422722009123DF /* HackerNewsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNewsReader-Prefix.pch"; sourceTree = "<group>"; };
+		EB7C3B5E19422722009123DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB7C3B5F19422722009123DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB7C3B6219422722009123DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB7C3B6419422722009123DF /* FeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsViewController.h; sourceTree = "<group>"; };
+		EB7C3B6519422722009123DF /* FeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsViewController.m; sourceTree = "<group>"; };
+		EB7C3B6719422722009123DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB7C3B6D19422722009123DF /* HackerNewsReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7C3B6E19422722009123DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB7C3B7619422722009123DF /* HackerNewsReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackerNewsReaderTests-Info.plist"; sourceTree = "<group>"; };
+		EB7C3B7819422722009123DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB7C3B7A19422722009123DF /* HackerNewsReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerNewsReaderTests.m; sourceTree = "<group>"; };
+		EB7C3B8419422733009123DF /* FeedDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDownloader.h; sourceTree = "<group>"; };
+		EB7C3B8519422734009123DF /* FeedDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDownloader.m; sourceTree = "<group>"; };
+		EB7C3B8719422742009123DF /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		EB7C3B8819422742009123DF /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		EB7C3B8A19422F9C009123DF /* FeedItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemCell.h; sourceTree = "<group>"; };
+		EB7C3B8B19422F9C009123DF /* FeedItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemCell.m; sourceTree = "<group>"; };
+		EB7C3B8D194236FA009123DF /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
+		EB7C3B8E194236FA009123DF /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB7C3B4919422722009123DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C3B5219422722009123DF /* CoreGraphics.framework in Frameworks */,
+				EB7C3B5419422722009123DF /* UIKit.framework in Frameworks */,
+				EB7C3B5019422722009123DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C3B6A19422722009123DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C3B6F19422722009123DF /* XCTest.framework in Frameworks */,
+				EB7C3B7119422722009123DF /* UIKit.framework in Frameworks */,
+				EB7C3B7019422722009123DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB2AC53519423F9400B68588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B8419422733009123DF /* FeedDownloader.h */,
+				EB7C3B8519422734009123DF /* FeedDownloader.m */,
+				EB7C3B8719422742009123DF /* FeedItem.h */,
+				EB7C3B8819422742009123DF /* FeedItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB2AC53619423FBF00B68588 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B8A19422F9C009123DF /* FeedItemCell.h */,
+				EB7C3B8B19422F9C009123DF /* FeedItemCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EB7C3B4319422722009123DF = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B5519422722009123DF /* HackerNewsReader */,
+				EB7C3B7419422722009123DF /* HackerNewsReaderTests */,
+				EB7C3B4E19422722009123DF /* Frameworks */,
+				EB7C3B4D19422722009123DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB7C3B4D19422722009123DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B4C19422722009123DF /* HackerNewsReader.app */,
+				EB7C3B6D19422722009123DF /* HackerNewsReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB7C3B4E19422722009123DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B4F19422722009123DF /* Foundation.framework */,
+				EB7C3B5119422722009123DF /* CoreGraphics.framework */,
+				EB7C3B5319422722009123DF /* UIKit.framework */,
+				EB7C3B6E19422722009123DF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB7C3B5519422722009123DF /* HackerNewsReader */ = {
+			isa = PBXGroup;
+			children = (
+				EB2AC53619423FBF00B68588 /* Views */,
+				EB2AC53519423F9400B68588 /* Model */,
+				EB7C3B9019423F02009123DF /* ViewControllers */,
+				EB7C3B5E19422722009123DF /* AppDelegate.h */,
+				EB7C3B5F19422722009123DF /* AppDelegate.m */,
+				EB7C3B6119422722009123DF /* Main.storyboard */,
+				EB7C3B6719422722009123DF /* Images.xcassets */,
+				EB7C3B5619422722009123DF /* Supporting Files */,
+			);
+			path = HackerNewsReader;
+			sourceTree = "<group>";
+		};
+		EB7C3B5619422722009123DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B5719422722009123DF /* HackerNewsReader-Info.plist */,
+				EB7C3B5819422722009123DF /* InfoPlist.strings */,
+				EB7C3B5B19422722009123DF /* main.m */,
+				EB7C3B5D19422722009123DF /* HackerNewsReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB7C3B7419422722009123DF /* HackerNewsReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B7A19422722009123DF /* HackerNewsReaderTests.m */,
+				EB7C3B7519422722009123DF /* Supporting Files */,
+			);
+			path = HackerNewsReaderTests;
+			sourceTree = "<group>";
+		};
+		EB7C3B7519422722009123DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B7619422722009123DF /* HackerNewsReaderTests-Info.plist */,
+				EB7C3B7719422722009123DF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB7C3B9019423F02009123DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB7C3B8D194236FA009123DF /* FeedDetailViewController.h */,
+				EB7C3B8E194236FA009123DF /* FeedDetailViewController.m */,
+				EB7C3B6419422722009123DF /* FeedsViewController.h */,
+				EB7C3B6519422722009123DF /* FeedsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB7C3B4B19422722009123DF /* HackerNewsReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB7C3B7E19422722009123DF /* Build configuration list for PBXNativeTarget "HackerNewsReader" */;
+			buildPhases = (
+				EB7C3B4819422722009123DF /* Sources */,
+				EB7C3B4919422722009123DF /* Frameworks */,
+				EB7C3B4A19422722009123DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerNewsReader;
+			productName = HackerNewsReader;
+			productReference = EB7C3B4C19422722009123DF /* HackerNewsReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB7C3B6C19422722009123DF /* HackerNewsReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB7C3B8119422722009123DF /* Build configuration list for PBXNativeTarget "HackerNewsReaderTests" */;
+			buildPhases = (
+				EB7C3B6919422722009123DF /* Sources */,
+				EB7C3B6A19422722009123DF /* Frameworks */,
+				EB7C3B6B19422722009123DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB7C3B7319422722009123DF /* PBXTargetDependency */,
+			);
+			name = HackerNewsReaderTests;
+			productName = HackerNewsReaderTests;
+			productReference = EB7C3B6D19422722009123DF /* HackerNewsReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB7C3B4419422722009123DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Kent State University";
+				TargetAttributes = {
+					EB7C3B6C19422722009123DF = {
+						TestTargetID = EB7C3B4B19422722009123DF;
+					};
+				};
+			};
+			buildConfigurationList = EB7C3B4719422722009123DF /* Build configuration list for PBXProject "HackerNewsReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB7C3B4319422722009123DF;
+			productRefGroup = EB7C3B4D19422722009123DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB7C3B4B19422722009123DF /* HackerNewsReader */,
+				EB7C3B6C19422722009123DF /* HackerNewsReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB7C3B4A19422722009123DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C3B6819422722009123DF /* Images.xcassets in Resources */,
+				EB7C3B5A19422722009123DF /* InfoPlist.strings in Resources */,
+				EB7C3B6319422722009123DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C3B6B19422722009123DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C3B7919422722009123DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB7C3B4819422722009123DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C3B6619422722009123DF /* FeedsViewController.m in Sources */,
+				EB7C3B8919422742009123DF /* FeedItem.m in Sources */,
+				EB7C3B6019422722009123DF /* AppDelegate.m in Sources */,
+				EB7C3B8F194236FA009123DF /* FeedDetailViewController.m in Sources */,
+				EB7C3B8619422734009123DF /* FeedDownloader.m in Sources */,
+				EB7C3B8C19422F9C009123DF /* FeedItemCell.m in Sources */,
+				EB7C3B5C19422722009123DF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7C3B6919422722009123DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7C3B7B19422722009123DF /* HackerNewsReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB7C3B7319422722009123DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB7C3B4B19422722009123DF /* HackerNewsReader */;
+			targetProxy = EB7C3B7219422722009123DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB7C3B5819422722009123DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7C3B5919422722009123DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB7C3B6119422722009123DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7C3B6219422722009123DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB7C3B7719422722009123DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7C3B7819422722009123DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB7C3B7C19422722009123DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB7C3B7D19422722009123DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB7C3B7F19422722009123DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
+				INFOPLIST_FILE = "HackerNewsReader/HackerNewsReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB7C3B8019422722009123DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
+				INFOPLIST_FILE = "HackerNewsReader/HackerNewsReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB7C3B8219422722009123DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HackerNewsReader.app/HackerNewsReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HackerNewsReaderTests/HackerNewsReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB7C3B8319422722009123DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HackerNewsReader.app/HackerNewsReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackerNewsReader/HackerNewsReader-Prefix.pch";
+				INFOPLIST_FILE = "HackerNewsReaderTests/HackerNewsReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB7C3B4719422722009123DF /* Build configuration list for PBXProject "HackerNewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C3B7C19422722009123DF /* Debug */,
+				EB7C3B7D19422722009123DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB7C3B7E19422722009123DF /* Build configuration list for PBXNativeTarget "HackerNewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C3B7F19422722009123DF /* Debug */,
+				EB7C3B8019422722009123DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB7C3B8119422722009123DF /* Build configuration list for PBXNativeTarget "HackerNewsReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB7C3B8219422722009123DF /* Debug */,
+				EB7C3B8319422722009123DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB7C3B4419422722009123DF /* Project object */;
+}
